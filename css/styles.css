@@ -477,15 +477,15 @@ footer {
     }
 
     .header__right-image {
-        width: 40%;
-        right: 30%;
+        width: 90%;
+        right: 5%;
     }
 
     .header__right-bg {
-        height: 18rem;
-        width: 18rem;
-        right: 23%;
-        bottom: -5rem;
+        height: 35rem;
+        width: 35rem;
+        right: -5rem;
+        bottom: -15rem;
     }
 
     .contactUs__detail {
