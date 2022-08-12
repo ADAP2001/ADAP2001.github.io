@@ -31,6 +31,10 @@ body {
     color: var(--color-black);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -94,7 +98,7 @@ h4 {
 nav {
     background: transparent;
     width: 100vw;
-    height: 5rem;
+    height: 4rem;
     position: fixed;
     top: 0;
     z-index: 11;
@@ -335,22 +339,20 @@ footer {
     gap: 3rem;
 }
 
-.footer__1,
-.footer__2,
-.footer__3 {
-    background: var(--color-white);
-    padding: 1rem;
+.footer__1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 70% 30%;
+    background: var(--color-white);
 }
 
-.footer__logo {
-    text-align: right;
+.footer__1 .footer__info {
+    padding: 1rem;
 }
 
-.footer__logo .size {
-    width: 16px;
-    height: 16px;
+.footer__1 .footer__icon {
+    font-size: 3rem;
+    margin: auto;
+    padding: auto;
 }
 
 .footer__navbar {
@@ -507,5 +509,19 @@ footer {
 
     .skill__Contact {
         padding: 0 2rem;
+    }
+
+    .footer__navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__navbar h4 {
+        margin-bottom: 1rem;
+    }
+
+    .footer__menu {
+        padding: 0.5rem;
     }
 }
